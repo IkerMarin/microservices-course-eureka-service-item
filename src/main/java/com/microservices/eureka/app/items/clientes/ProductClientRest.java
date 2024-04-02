@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import com.microservices.eureka.app.items.models.entity.Product;
 
-@FeignClient(name = "products-service", url="localhost:8001")
+@FeignClient(name = "products-service")
 public interface ProductClientRest {
 	
 	@GetMapping("/products/product-list")
